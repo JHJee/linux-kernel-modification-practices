@@ -2,14 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <unistd.h>
 #define __NR_hello 436
 #define __NR_mygetsid 437
 #define __NR_swrite 438
 #define __NR_sread 439
 
 #define BUFSIZE 100
-
 void to_binary(char* buf)
 {
     unsigned char p;
